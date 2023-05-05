@@ -1,0 +1,52 @@
+@import 'Pattern.css';
+
+body > header, body > footer{
+  background-color: var(--cor3);
+  color: var(--cor2);
+  position: absolute;
+  left: 0px;
+  width: 100%;
+}
+body > header{
+  font-family: var(--adventfont);
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  top: 0px;
+  z-index: 2;
+}
+body > footer{
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--adventfont);
+  width: 100%;
+  font-size: 20px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 767px){
+  body > header, body > footer{
+    height: 55px;
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  body > header, body > footer{
+    height: 60px;
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  body > header, body > footer{
+    height: 65px;
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1200px){
+  body > header, body > footer{
+    height: 70px;
+    font-size: 1.5em;
+  }
+}

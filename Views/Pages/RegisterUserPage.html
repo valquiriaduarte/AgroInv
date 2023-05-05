@@ -1,0 +1,33 @@
+<main>
+  <form action="/cadastrar-usuario" method="post" autocomplete="on">
+    <fieldset id="box-form">
+      <h1>Cadastro</h1>
+    
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name">
+      </div>
+      
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email">
+      </div>
+      
+      <div>
+        <label for="password">Senha:</label>
+        <input type="password" name="password">
+      </div>
+      
+      <div class='select'>
+        <select name="typeUser">
+          {{type-user}}
+        </select>
+      </div>
+
+      {{register-error}}
+      
+      <button type="submit" value="enviar">Cadastrar</button>
+        
+    </fieldset>
+  </form>
+</main>

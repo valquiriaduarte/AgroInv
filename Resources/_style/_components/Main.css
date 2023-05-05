@@ -1,0 +1,84 @@
+@import 'Pattern.css';
+
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--cor4);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: var(--cor2);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------- Responsibilidade das sessões -------------------- */
+
+main section.col2{
+  display: flex;
+  margin: 0 5% 30px 5%;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+main section.col2:last-of-type{
+  margin: 0 5% 0 5%;
+}
+main section.col2 section{
+  flex-basis: 46%;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+main section.col2 section:last-of-type{
+  margin: 0;
+}
+main section.col2 > *:not(section){
+  flex-grow: 2;
+}
+
+/* -------------------- QUEBRA 1 -------------------- */
+@media only screen and (max-width: 767px){
+  body{
+    gap: 0;
+  }
+  main{
+    width: 100%;
+  }
+  main > article > section{
+    flex-direction: column;
+  }
+  main section.col2 section{
+/*     margin-bottom: 15px; */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  main{
+    padding-top: 20px;
+    width: 700px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  main{
+    width: 900px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  main{
+    width: 1150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main > article > section > section{
+    width: 46%;
+  }
+}

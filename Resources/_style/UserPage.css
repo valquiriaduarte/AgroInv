@@ -1,0 +1,10 @@
+@import '_components/Navbar.css';
+@import '_components/Footer.css';
+@import '_components/Main.css';
+@import '_components/Form.css';
+@import '_components/Title.css';
+
+*{
+  margin: 0;
+  padding: 0;
+}

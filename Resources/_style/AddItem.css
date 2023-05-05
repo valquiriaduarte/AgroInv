@@ -1,0 +1,104 @@
+@import '_components/Main.css';
+@import '_components/Title.css';
+@import '_components/Pattern.css';
+@import '_components/Footer.css';
+@import '_components/Navbar.css';
+@import '_components/Form.css';
+@import '_components/Button.css';
+@import '_components/ButtonSubmit.css';
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body > main{
+}
+
+
+/* fieldset{
+  border: 3px solid var(--cor1);
+  margin-bottom: 10px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+fieldset > h1{
+  text-align: center;
+  font-family: var(--muktafont);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 50px;
+
+  text-decoration-line: underline;
+  
+  color: #24A652;
+}
+
+fieldset > label{
+  font-family: var(--adventfont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 45px;
+  color: var(--cor1);
+  width: 120px;
+}
+
+
+fieldset > input{
+  border: 2px solid var(--cor1);
+  font-family: var(--muktafont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--cor1);
+  width: 120px;
+}
+
+fieldset > select{
+  border: 2px solid var(--cor1);
+  font-family: var(--adventfont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;z
+  line-height: 19px;
+  color: var(--cor1);
+  width: 100px;
+  
+}
+
+fieldset > #adicionar{
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 43px;
+  text-align: center;
+  color: var(--cor4);
+}
+button{
+  background-color: var(--cor1);
+  color: var(--cor3);
+  width: 264px;
+  height: 43px;
+  left: calc(50% - 264px/2 + 1px);
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  border-radius: 30px;
+  text-align: center;
+  color: var(--cor4);
+  border: none;
+}
+ */

@@ -1,0 +1,86 @@
+{
+  "Botao": {
+  "border-radius": "30px"
+  },
+
+  "Navbars":{
+    "position": "absolute",
+    "width": "100%",
+    "height": "60px",
+    "left": "100%",
+    "top": "0px"
+  },
+
+  "ItemNavbar":{
+    "position": "absolute",
+    "width": "189px",
+    "height": "60px",
+    "left": "867px",
+    "top": "0px"
+  },
+
+  "IconeNavbar":{
+    "position": "absolute",
+    "width": "32px",
+    "height": "32px",
+    "left": "1258px",
+    "top": "14px"
+  },
+
+  "Titulos":{
+    "border-radius": "0px 30px 30px 0px",
+    "display": "flex",
+    "flex-direction": "row",
+    "justify-content": "center",
+    "align-items": "center",
+    "padding": "1px 30px 1px 200px",
+    "gap": "10px",
+    "width": "397px",
+    "height": "55px"
+  },
+
+  "CaixaDeUsuario":{
+    "width": "170px",
+    "height": "225px",
+    "left": "636px",
+    "top": "690px"
+  },
+
+  "CaixaDiaDados":{
+    "box-sizing": "border-box",
+    "position": "absolute",
+    "width": "476.38px",
+    "height": "271px",
+    "left": "629px",
+    "top": "954px",
+    "border": "3.17588px solid",
+    "box-shadow": "2.38191px 2.38191px 2.38191px rgba(0, 0, 0, 0.25)"
+  },
+
+  "CaixaDiaNum":{
+    "box-sizing": "border-box",
+    
+    "position": "absolute",
+    "width": "294px",
+    "height": "271px",
+    "left": "335px",
+    "top": "954px",
+
+    "border": "3.17588px solid #24A652",
+    "box-shadow": "2.38191px 2.38191px 2.38191px rgba(0, 0, 0, 0.25)",
+    "border-radius": "23.8191px 0px 0px 23.8191px"
+  },
+
+  "Cores":{
+    "verdeEscuro": "#24A652",
+    "verdeClaro": "#23D962",
+    "preto": "#0D0D0D",
+    "laranja": "#CE754C",
+    "cinza": "#403D3E",
+    "branco": "#FFFFFF"
+  },
+
+  "Usuario":{
+    "tipo": ["deslogado", "professor", "admin"]
+  }
+}

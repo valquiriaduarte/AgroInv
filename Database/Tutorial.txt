@@ -1,0 +1,29 @@
+- Os bancos são arquivos terminados em .db
+
+- Pra criar um banco:
+  Exemplo -> sqlite3 ./BD/BancoTutorial.db (cria um arquivo em ./BD/)
+
+- .open abre o arquivo e .read executa
+
+- Pelo que eu li, dá pra converter um .db em .sql com:
+  BancoTutorial.db .dump > Convertido.sql
+- E o contrário com:
+  BancoTutorial.db .dump < Convertido.sql
+
+- .databases mostra os bancos em um arquivo
+- .tables mostra as tables
+
+Os comandos do sql funcionam normalmente
+Mas
+Pra usar SQLite com PHP, os comandos são diferentes 
+
+.open ./Database/Database.bd 
+.read ./Database/CreateDatabase.sql
+.read ./Database/SetTeste.sql
+
+select * from Curso;
+select * from ;
+
+sqlite3 -cmd ".open ./Database/Database.bd" ".exit";
+sqlite3 -cmd  ".read ./Database/CreateDatabase.sql" ".exit";
+sqlite3 -cmd ".read ./Database/SetTeste.sql" ".exit";

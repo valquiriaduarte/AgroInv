@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Resources/_style/SchedulingPage.css" type="text/css">
+  <title>Agendamento</title>
+</head>
+<body>
+  
+  {{navbar}}
+  
+  <main>
+    <form action="#" method="post"  id="form">
+      <fieldset>
+        
+        <h1>Agendar aula</h1>
+        
+        <div>
+          <select>
+            <option selected disabled>Selecione um template</option>
+          </select>
+        </div>
+        
+        <div>
+          <label>Aula: </label>
+          <input type='text'>
+        </div>
+        
+        <div>
+          <label>Turma: </label>
+          <select>
+            <option selected disabled></option>
+          </select>
+        </div>
+        
+        <div>
+          <label>Professor: </label>
+          <select>
+            {{teacher-options}}
+          </select>
+        </div>
+
+        <div>
+          <label>Laboratório: </label>
+          <select>
+            {{lab-options}}
+          </select>
+        </div>
+        
+        <div class='time'>
+          <label>Dia: </label>
+          <input type="date" id="data" name="data">
+          <label>Início: </label>
+          <input type="time" id="inicio" name="h_ini">
+          <label>Fim: </label>
+          <input type="time" id="fim" name="h_fim">
+        </div>
+
+        <div>
+          <label>Materiais:</label>
+          <select>
+              {{mat-options}}
+          </select>
+        </div>
+
+        <div>
+          <label>Observações: </label>
+          <input type="text">
+        </div>
+        
+      </fieldset>
+      
+      <button type="submit" class="button-submit">AGENDAR</button> <!--  deve haver mais um botão "vizualizar agendamento por professor"-->
+    
+    </form> 
+  </main>
+  
+  {{footer}}
+  
+</body>
+</html>

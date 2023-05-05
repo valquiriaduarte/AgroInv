@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm ~/Principal-TCC/Database/Database.bd;
+sqlite3 -cmd  ".read ./Database/criar.sql";

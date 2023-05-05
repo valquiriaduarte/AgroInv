@@ -1,0 +1,202 @@
+@import 'Pattern.css';
+
+/* --------------- COLORS --------------- */
+.Calendario, 
+.Calendario > header, 
+.Calendario > table, 
+.Calendario a:visited, .Calendario a:-webkit-any-link, .Calendario nav button{
+  color: var(--cor1);
+}
+.Calendario{
+  background-color: var(--cor2);
+}
+.outMonthDay{
+  color: var(--cor1mc);
+}
+.Calendario tbody th:hover{
+  background-color: var(--cor1mc);
+  color: var(--cor2);
+}
+.today{
+  background-color: var(--cor1mmc);
+}
+.Calendario nav button{
+  background-color: transparent;
+}
+.Calendario nav button:hover{
+  color: var(--cor1mc);
+}
+.Calendario nav button:active{
+  color: var(--cor1mmc);
+}
+
+/* --------------- HEADER --------------- */
+.Calendario > header{
+  text-align: center;
+}
+.Calendario > header > h2{
+  margin-bottom: -5px;
+}
+.Calendario nav form{
+  display: flex;
+  justify-content: space-around;
+}
+.Calendario nav button{
+  border: none;
+  font-famly: serif;
+  text-decoration: underline;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* --------------- TABLE --------------- */
+.Calendario{
+  border: 4px solid var(--cor1);
+  border-radius: 80px 80px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Calendario thead th{
+  width: 14%;
+}
+.Calendario > table{
+  width: 100%;
+  border-spacing: 0px;
+}
+.Calendario tbody th{
+  border-spacing: 0;
+  box-shadow: -2px 0px 0px 0px var(--cor1), 0px -2px 0px 0px var(--cor1);
+  cursor: pointer;
+}
+.Calendario tbody p{
+  position: relative;
+  top: -10%;
+}
+.Calendario a:-webkit-any-link{
+  font-decoration: none;
+}
+
+
+/* --------------- MARKS --------------- */
+.Calendario .Mark{
+  border-radius: 50%;
+  background-color: var(--cor1);
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px){
+ .Calendario{
+    width: 98%;
+  } 
+  .Calendario tbody th{
+    height: 60px;
+  }
+  .Calendario > header > h2{
+    font-size: 1.6em;
+  }
+  .Calendario > header > h1{
+    font-size: 2em;
+  }
+  .Calendario > header > a, .Calendario nav button{
+    font-size: 1em;
+  }
+  .Calendario thead th{
+    font-size: 1em;
+  }
+  .Calendario tbody th{
+    font-size: 1.1em;
+    box-shadow: -3px 0px 0px 0px var(--cor1), 0px -3px 0px 0px var(--cor1);
+  }
+  .Calendario .Mark{
+    width: 8px;
+    height: 8px;
+  }
+  .Calendario{
+    border-radius: 0px;
+    border: 3px solid var(--cor1);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .Calendario{
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .Calendario tbody th{
+    height: 30px;
+  }
+  .Calendario > header > h2{
+    font-size: 1.4em;
+  }
+  .Calendario > header > h1{
+    font-size: 2.1em;
+  }
+  .Calendario > header > a, .Calendario nav button{
+    font-size: 1.2em;
+  }
+  .Calendario thead th{
+    font-size: 1.6em;
+  }
+  .Calendario tbody th{
+    font-size: 1em;
+  }
+  .Calendario .Mark{
+    width: 8px;
+    height: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .Calendario{
+    min-width: 500px;
+    max-width: 600px;
+  }
+  .Calendario tbody th{
+    height: 40px;
+  }
+  .Calendario > header > h2{
+    font-size: 1.6em;
+  }
+  .Calendario > header > h1{
+    font-size: 2.3em;
+  }
+  .Calendario > header > a, .Calendario nav button{
+    font-size: 1.4em;
+  }
+  .Calendario thead th{
+    font-size: 1.8em;
+  }
+  .Calendario tbody th{
+    font-size: 1.2em;
+  }
+  .Calendario .Mark{
+    width: 13px;
+    height: 15px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .Calendario{
+    min-width: 600px;
+    max-width: 800px;
+  }
+  .Calendario tbody th{
+    height: 60px;
+  }
+  .Calendario > header > h2{
+    font-size: 1.8em;
+  }
+  .Calendario > header > h1{
+    font-size: 2.5em;
+  }
+  .Calendario > header > a, .Calendario nav button{
+    font-size: 1.6em;
+  }
+  .Calendario thead th{
+    font-size: 2em;
+  }
+  .Calendario tbody th{
+    font-size: 1.5em;
+  }
+  .Calendario .Mark{
+    width: 17px;
+    height: 20px;
+  }
+}

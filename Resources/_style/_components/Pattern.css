@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Mukta&display=swap');
+
+* {
+  --cor1: #24A652;
+  --cor1mme: #104623;
+  --cor1mc: rgba(36, 166, 82, 0.75); 
+  --cor1mmc: rgba(36, 166, 82, 0.5); 
+  --cor2: white;
+  --cor3: #0D0D0D;
+  --cor4: #F2F2F2;
+  --cor5: #F06449;
+  --adventfont: 'Advent Pro', sans-serif;
+  --muktafont: 'Mukta';
+}
+
+.svgcor1{
+  filter: invert(54%) sepia(18%) saturate(1645%) hue-rotate(88deg) brightness(93%) contrast(92%);
+}
+.svgcor2{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(153deg) brightness(100%) contrast(104%);
+}

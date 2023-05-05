@@ -1,0 +1,24 @@
+@import '_components/Main.css';
+@import '_components/Footer.css';
+@import '_components/Navbar.css';
+
+@import '_components/Title.css';
+@import '_components/Button.css';
+@import '_components/Text.css';
+@import '_components/Table.css';
+
+
+@import '_components/Index.css';
+@import '_components/AnyProblem.css';
+@import '_components/Contacts.css';
+@import '_components/Calendar.css';
+@import '_components/DisplayTeachersAdms.css';
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}

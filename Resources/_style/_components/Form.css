@@ -1,0 +1,105 @@
+.form{
+  border: 4px solid var(--cor1);
+}
+.form > fieldset{
+  border: none;
+}
+
+.form > fieldset > h1{
+  font-family: var(--muktafont);
+  font-weight: 800;
+  text-decoration: underline;
+  color: var(--cor1);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.form > fieldset > div, .form > fieldset > div > select{
+  font-family: var(--muktafont);
+}
+.form > fieldset > div{
+  margin-bottom: 15px;
+}
+.form > fieldset > div > label{
+  font-weight: 800;
+}
+ .form > fieldset > div input[type='text']{
+   width: 100%;
+   display: inline;
+ }
+
+@media only screen and (max-width: 767px){
+  .form{
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  .form > fieldset{
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+  }
+  .form > fieldset > h1{
+    font-size: 1.6em;
+  }
+  .form > fieldset > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .form > fieldset > div,{
+    font-size: 1.5em;
+  }
+  .form > fieldset > div > select{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+ .form > fieldset{
+   padding: 0 30px;
+   width: 500px;
+ }
+  .form > fieldset > h1{
+    font-size: 1.7em;
+  }
+  .form > fieldset > div,{
+    font-size: 1.6em;
+  }
+  .form > fieldset > div > select{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+ .form > fieldset{
+   padding: 0 40px;
+   width: 650px;
+ }
+  .form > fieldset > h1{
+    font-size: 1.8em;
+  }
+  .form > fieldset > div,{
+    font-size: 1.7em;
+  }
+  .form > fieldset > div > select{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+ .form > fieldset{
+   padding: 0 60px;
+   width: 800px;
+ }
+  .form > fieldset > h1{
+    font-size: 2em;
+  }
+  .form > fieldset > div,{
+    font-size: 1.8em;
+  }
+  .form > fieldset > div > select{
+    font-size: 1em;
+  }
+}

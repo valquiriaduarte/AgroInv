@@ -1,0 +1,8 @@
+@import '_components/Pattern.css';
+@import '_components/BoxForm.css';
+@import '_components/FooterHeaderStatic.css';
+
+*{
+  margin: 0;
+  padding: 0;
+}

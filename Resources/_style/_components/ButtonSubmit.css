@@ -1,0 +1,42 @@
+@import 'Pattern.css';
+
+.button-submit{
+  border: none;
+  background-color: var(--cor1);
+  font-weight: 800;
+  color: var(--cor2);
+  font-family: var(--muktafont);
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-submit:hover{
+  background-color: var(--cor1mc);
+}
+.button-submit:active{
+  background-color: var(--cor1mmc);
+}
+
+@media only screen and (max-width: 767px){
+  .button-submit{
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .button-submit{
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .button-submit{
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .button-submit{
+    font-size: 2em;
+  }
+}

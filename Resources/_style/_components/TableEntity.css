@@ -1,0 +1,326 @@
+@import 'Pattern.css';
+
+.form{
+  padding: 0 50px;
+  position: relative;
+/*   left:60%;
+  transform: translate(-50%, 0);
+  width: 80%; */
+}
+
+.form > table{
+  border: 3px solid var(--cor1);
+  width: 100%;
+  border-collapse: collapse;
+}
+.form > table, .tiny-button{
+  font-family: var(--muktafont);
+  color: var(--cor1);
+}
+button, .form > table > tbody > tr:last-child{
+  cursor: pointer;
+}
+
+.form > table > tbody > tr{
+  border-top: 4px solid var(--cor1);
+}
+.form > table > tbody > tr:last-child{
+  background-color: var(--cor1);
+}
+.form > table > tbody tr:last-child a{
+  position: relative;
+  text-decoration: underline;
+  font-family: var(--muktafont);
+  color: var(--cor2);
+}
+.form > table > tbody tr:last-child a:active{
+  color: var(--cor2);
+}
+.form > table > tbody > tr > td{
+  text-align: left;
+}
+.form > table > tbody > tr:last-child > td{
+  text-align: center;
+}
+
+.form > table > tbody > tr > td:last-child{
+  padding-right: 15px;
+}
+.form > table > tbody > tr > td:first-child{
+  padding-left: 15px;
+}
+
+.tiny-button{
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+.tiny-button:last-child{
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 767px){
+  .form{
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 0;
+  }
+  .form > table > tbody > tr > td{
+    font-size: 2em;
+  }
+  .form > table > thead > tr > th{
+    font-size: 1em;
+  }
+  .form > table > tbody > tr > td:last-child,
+  .form > table > tbody > tr > td:first-child{
+    padding: 0;
+  }
+  .form > table > tbody > tr > td{
+    text-align: center;
+  }
+  .form > table > tbody > tr:last-child > td{
+    text-align: center;
+  }
+  .form > table > tbody > tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .form > table > thead{
+    display: none;
+  }
+  .tiny-button{
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .form > table{
+    border-radius: 16px;
+  }
+  .form > table > thead > tr > th{
+    font-size: 1.6em;
+  }
+  .form > table > tbody > tr > td, .tiny-button{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .form > table > thead > tr > th{
+    font-size: 1.8em;
+  }
+  .form > table > tbody > tr > td{
+    font-size: 1.1em;
+  }
+  .tiny-button{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .form > table > thead > tr > th{
+    font-size: 2em;
+  }
+  .form > table > tbody > tr > td{
+    font-size: 1.3em;
+  }
+  .tiny-button{
+    font-size: 1.2em;
+  }
+}
+
+/* @keyframes slidelr{
+  from{
+    left: -50%;  
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes sliderl{
+  from{
+    left: 50%;  
+  }
+  to{
+    left: -50%;
+  }
+}
+.slidelr{
+  animation-iteration-count: 1;
+  animation-name: slidelr;
+  animation-duration: .5s;
+}
+.sliderl{
+  animation-iteration-count: 1;
+  animation-name: sliderl;
+  animation-duration: .5s;
+} */
+
+/* #register{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: var(--cor1);
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--cor1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  background-color: var(--cor2);
+}
+
+
+#register > fieldset{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#register h1{
+  text-decoration: underline;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#register > fieldset > div{
+  display: flex;
+  justify-content: space-between;
+}
+#register > fieldset > div > input{
+  width: 80%;
+}
+#register > fieldset{
+  font-family: var(--muktafont);
+  font-weight: 800;
+}
+#register > fieldset button{
+  margin-top: 60px;
+  border: none;
+  background-color: var(--cor1);
+  font-weight: 800;
+  color: var(--cor2);
+  font-family: var(--muktafont);
+} 
+.select{
+  display: flex;
+  align-items: right;
+}
+.select > select{
+  border: 3px solid var(--cor1);
+  outline: none;
+  background-color: var(--cor2);
+  font-family: var(--muktafont);
+  color: var(--cor1);
+}
+#register img, #register .return_button{
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+#register #return_button{
+  background-color: transparent;
+  border: none;
+}*/
+
+
+/* @media only screen and (max-width: 767px){
+  #register{
+    width: 100%;
+    height: 100%;
+  }
+  #register > fieldset{
+    font-size: 1.5em;
+  }
+  #register > fieldset > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #register > fieldset > div > input{
+    width: 100%;
+    height: 30px;
+  }
+  #register > fieldset button{
+    height: 50px;
+    font-size: 1.2em;
+  }
+  #register img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #register{
+    width: 400px;
+    height: 480px;
+    border-radius: 20px;
+  }
+  #register > fieldset{
+    font-size: 1.1em;
+  }
+  #register > fieldset button{
+    height: 50px;
+    font-size: 1.1em;
+  }
+  #register > fieldset > div > input{
+    font-size: 0.8em;
+  }
+  #register img{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  #register{
+    width: 450px;
+    height: 540px;
+    border-radius: 25px;
+  }
+  #register > fieldset{
+    font-size: 1.3em;
+  }
+  #register > fieldset button{
+    height: 60px;
+    font-size: 1.3em;
+  }
+  #register > fieldset > div > input{
+    font-size: 1em;
+  }
+  #register img{
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  #register{
+    width: 500px;
+    height: 600px;
+    border-radius: 30px;
+  }
+  #register > fieldset{
+    font-size: 1.5em;
+  }
+  #register > fieldset button{
+    height: 70px;
+    font-size: 1.5em;
+  }
+  #register > fieldset > div > input{
+    font-size: 1.2em;
+  }
+  .select > select{
+    font-size: 0.8em;
+  }
+  #register img{
+    width: 30px;
+    height: 30px;
+  }
+} */

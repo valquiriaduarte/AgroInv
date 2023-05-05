@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Resources/_style/UserPage.css">
+    <title>Perfil</title>
+  </head>
+  <body>
+    {{navbar}}
+    
+    <main>
+      <section>
+        <h1>Olá {{name}}</h1>
+      </section>
+
+      <form method="form">
+        <fieldset>
+
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" value="{{name}}">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" value='{{email}}'>
+          </div>
+          
+          <div>
+            <label for="password">Senha</label>
+            <input type="password" name='password' value='{{password}}'>
+          </div>
+          
+          <div>
+            <label for="register">Matrícula</label>
+            <input type="text" name='register' value='{{register}}' maxlength="11">
+          </div>
+          
+          <div>
+            <label for="phone">Telefone</label>
+            <input type="text" name='phone' value='{{phone}}'>
+          </div>
+
+          <div>
+            <select>
+              {{typeUser}}
+            </select>
+          </div>
+
+          <button type='submit'>Editar</button>
+          
+        </fieldset>
+      </form>
+      
+    </main>
+    {{footer}}
+  </body>
+</html>

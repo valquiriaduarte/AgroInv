@@ -1,0 +1,24 @@
+@import '_components/Footer.css';
+@import '_components/Main.css';
+@import '_components/Title.css';
+@import '_components/Pattern.css';
+@import '_components/Navbar.css';
+@import '_components/ButtonSubmit.css';
+@import '_components/Form.css';
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body > main{
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 767px){
+  main{
+    display: inline;
+  }
+}

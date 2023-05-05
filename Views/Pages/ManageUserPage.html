@@ -1,0 +1,92 @@
+<main>
+
+  <article>
+    
+    <h1>Gerenciar Usuario</h1>
+    
+    <form action="/usuarios" method="post" class="form">
+      
+      <table class="table">
+        
+        <thead>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Tipo</th>
+          <th>Ação</th>
+        </thead>
+        
+        <tbody>
+          
+          {{users}}
+          
+          <tr class='submit'><td colspan='5'><a href='/cadastrar-usuario'>Cadastrar</a></td></tr>
+        </tbody>
+        
+      </table>
+      
+    </form>
+    
+<!--         <form action="/cadastrar-usuario" method="post" id='register'>
+      
+      <button type='button' id="return_button">
+        <img src="../../Resources/_img/return.svg" class="svgcor1">
+      </button>
+      
+      <fieldset>
+        
+        <h1>Cadastro</h1>
+        
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" name="name">
+        </div>
+        
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="text" name="email">
+        </div>
+        
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" name="password">
+        </div>
+        
+        <div class='select'>
+          <select name="typeUser">
+            {{type-user}}
+          </select>
+        </div>
+        
+        {{register-error}}
+        
+        <button type="submit" value="enviar">Cadastrar</button>
+      
+      </fieldset>
+    
+    </form> -->
+  
+  </article>
+</main>
+
+<!--     <script>
+  const registerButton = document.getElementById('register_button');
+  const returnButton = document.getElementById('return_button');
+  const register = document.getElementById('register');
+
+  registerButton.addEventListener('click', () => {
+    register.classList.remove('sliderl');
+    register.classList.add('slidelr');
+    setTimeout(function(){
+      register.setAttribute('style', 'display: inline; left: 50%;');
+    }, 500);
+
+  });
+  returnButton.addEventListener('click', () => {
+    register.classList.remove('slidelr');  
+    register.classList.toggle('sliderl');
+    setTimeout(function(){
+      register.setAttribute('style', 'display: none; left: -50%;')
+    }, 400);
+  });
+</script> -->
