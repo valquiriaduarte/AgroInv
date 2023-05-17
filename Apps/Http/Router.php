@@ -15,37 +15,44 @@ class Router{
   # Define o prefixo das rotas
   private function setPrefix(){
     $this->prefix = parse_url($this->url)["path"] ?? "";
+    
   }
+  
   # Adiciona uma rota à lista de rotas.
   # Array [ Regex rota [ Método http [ Parâmetros (Controllers, Variáveis) ] ] ]
   private function addRoute($method, $route, $params = []){
 
+    
     # Coloca a key "controller" no método get do controller dentro da rota
     foreach($params as $key => $value){
       if($value instanceof Closure){
         $params["controller"] = $value;
         unset($params[$key]);
       }
+      
     }
 
     # Definição de variáveis que acompanharão a rota
     $params['variables'] = [];
+    
 
     # Definição de variáveis dentro da URI que acompanharão a rota
     $patternVariables = '/{(.*?)}/';
-
+    
     # Verifica na URI se tem uma variável 
     # Se tiver ela vai entrar dentro de $params['variables'] com seu respectivo valor
     if(preg_match_all($patternVariables, $route, $matches)){
       $route = preg_replace($patternVariables, '(.*?)', $route);
       $params['variables'] = $matches[1];
+     
     }
 
     # Monta o regex da rota
     $routePattern = "/^" . str_replace("/", "\/", $route) . "$/";
-
+    
     # Adiciona a lista de rotas
     $this->routes[$routePattern][$method] = $params;
+  
   }
   # 4 métodos Http vão chamar o addRoute()
   function get($route, $params = []){
@@ -64,18 +71,18 @@ class Router{
   private function getUri(){
     $uri = $this->request->getUri();
     $uri = strlen($this->prefix) ? explode($this->prefix, $uri) : [$uri];
-    return end($uri);
+    return end($uri);  
   }
   # Retorna uma rota se ela existir
   function getRoute(){
     $uri = $this->getUri();
     $httpMethod = $this->request->getHttpMethod();
 
-    # Verifica todas as rotas
-    foreach($this->routes as $patternRoute => $methods){
-      
+    # Verifica todas as rotas 
+    foreach($this->routes as $patternRoute => $methods){ 
       # Se a URI bater com o regex e se existir aquele método
-      if(preg_match($patternRoute, $uri, $matches)){
+      if(preg_match($patternRoute, $uri, $matches)){  echo $uri;
+        
         if($methods[$httpMethod]){
           
           # Tira a posição 0 do $match (que vai ter a URI completa)
@@ -93,7 +100,7 @@ class Router{
         throw new Exception("O método requisitado não é permitido", 405);
       }
     }
-    throw new Exception("URL não encontrada", 404);
+    throw new Exception("URL não encontrada!", 404);
   }
   function run(){
 
