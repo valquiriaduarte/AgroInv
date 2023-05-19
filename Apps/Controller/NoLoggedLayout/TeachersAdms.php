@@ -9,7 +9,7 @@
       $item = "";
 
       foreach($profs as $prof){
-        $item .= "<li><img href='/Resources/_img/no-logged-img.svg'><div>" . $prof -> getNome() . "<br>" . $prof -> getEmail() . "<br>" . $prof -> getTelefone() . "</div></li>";
+        $item .= "<li><img href='./Resources/_img/no-logged-img.svg'><div>" . $prof -> getNome() . "<br>" . $prof -> getEmail() . "<br>" . $prof -> getTelefone() . "</div></li>";
       }
 
       return $item;

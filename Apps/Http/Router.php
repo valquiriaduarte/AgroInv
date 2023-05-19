@@ -81,7 +81,8 @@ class Router{
     # Verifica todas as rotas 
     foreach($this->routes as $patternRoute => $methods){ 
       # Se a URI bater com o regex e se existir aquele método
-      if(preg_match($patternRoute, $uri, $matches)){  echo $uri;
+      if(preg_match($patternRoute, $uri, $matches)){
+//          echo $uri;
         
         if($methods[$httpMethod]){
           

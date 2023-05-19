@@ -53,8 +53,8 @@ class Database{
 
     # Dados da query
     $where = strlen($where) ? ' where ' . $where: '';
-    $order = strlen($order) ? ' where ' . $order : '';
-    $limit = strlen($limit) ? ' where ' . $limit : '';
+    $order = strlen($order) ? ' order by ' . $order : '';
+    $limit = strlen($limit) ? ' limit ' . $limit : '';
     
     # Monta a query
     $query = 'select ' . $fields . ' from ' . $this->table . $where . $order . $limit;
