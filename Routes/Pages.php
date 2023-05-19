@@ -34,7 +34,7 @@ $router->post("/login", [
 ]);
 $router->get("/aulas", [
   function($request){
-   return new Response(200, ClassPage::get($request));
+   return new Response(200, ClassPage::get());
   }
 ]);
 

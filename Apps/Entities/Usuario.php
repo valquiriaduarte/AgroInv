@@ -35,7 +35,7 @@ class Usuario{
     } else return false;
   }
   public function setSenha($senha){
-    $this->senha = password_hash($senha);
+    $this->senha = password_hash($senha,PASSWORD_DEFAULT);
     return true;
     // if(!empty($senha) and validatePassword($senha)){
     //   $this->senha = $senha;

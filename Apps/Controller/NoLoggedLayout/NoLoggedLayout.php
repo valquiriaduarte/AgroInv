@@ -8,12 +8,12 @@ class NoLoggedLayout{
 
     $args = [
       'navbar' => Navbar::get([
-        'Home' => '/',
+        'Home' => './',
         'Verificar Aulas' => [
-          'Lista de aulas' => '/aulas',
-          'Calendário' => '/calendario'
+          'Lista de aulas' => './aulas',
+          'Calendário' => './calendario'
         ],
-        'Professores' => '/professores-administradores'
+        'Professores' => './professores-administradores'
       ], $tab, 'NoLogged'),
       'title' => $title,
       'content' => $content,

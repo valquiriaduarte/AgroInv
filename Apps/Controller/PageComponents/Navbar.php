@@ -40,12 +40,12 @@ class Navbar{
     switch($status){
       
       case 'NoLogged':
-        $icon = '<a href="' . View::getVars()['login-url'] . '"><p>Entrar</p><img src="/Resources/_img/join.png"></a>';
+        $icon = '<a href="' . View::getVars()['login-url'] . '"><p>Entrar</p><img src="./Resources/_img/join.png"></a>';
       break;
       
       case 'Logged':
-        // $icon = '<a href="/usuario/' . 'nome' . '"><p>Sair</p><img src="/Resources/_img/leave.png"></a>';
-        $icon .= '<a href="' . View::getVars()['logout-url'] . '"><p>Sair</p><img src="/Resources/_img/leave.png"></a>';
+        // $icon = '<a href="/usuario/' . 'nome' . '"><p>Sair</p><img src="./Resources/_img/leave.png"></a>';
+        $icon .= '<a href="' . View::getVars()['logout-url'] . '"><p>Sair</p><img src="./Resources/_img/leave.png"></a>';
       break;
       
       exit;
@@ -62,4 +62,4 @@ class Navbar{
   }
 }
 
-// <a href="{{login-url}}"><p>Entrar</p><img src="/Resources/_img/join.png"></a>
+// <a href="{{login-url}}"><p>Entrar</p><img src="./Resources/_img/join.png"></a>

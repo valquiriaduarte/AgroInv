@@ -8,7 +8,7 @@ class ClassPage extends NoLoggedLayout{
   static function getLessons(){
 
     $today = date("Y\-m\-d", strtotime("now -3 hours"));
-    $lessons = Aula::get('*', 'dataAula = 07/02/2023');    
+    $lessons = Aula::get('dataAula = 07/02/2023');
     $lines = '';
 
     foreach($lessons as $lesson){

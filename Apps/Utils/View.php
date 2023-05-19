@@ -6,7 +6,7 @@ class View{
     self::$vars = $vars;
   }
   public static function getVars(){ return self::$vars; }
-  private function getViewContent($view){
+  private static function getViewContent($view){
     $path = __DIR__ . "/../../Views";
     $dirs = array_diff(scandir($path), ["..", "."]);
     foreach($dirs as $index => $dir) if(!is_dir("$path/$dir")) unset($dirs[$index]);
